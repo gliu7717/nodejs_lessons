@@ -1,7 +1,7 @@
 {
-  "name": "crash-course",
+  "name": "nodejsmongodb",
   "version": "1.0.0",
-  "description": "a node crash course",
+  "description": "a node mongodb example",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,19 +9,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iamshaunjp/node-crash-course.git"
+    "url": "https://github.com/gliu7717/nodejs_lessons"
   },
-  "author": "net ninja",
+  "author": "gliu",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/iamshaunjp/node-crash-course/issues"
+    "url": "https://github.com/gliu7717/nodejs_lessons"
   },
-  "homepage": "https://github.com/iamshaunjp/node-crash-course#readme",
+  "homepage": "https://github.com/gliu7717/nodejs_lessons",
   "dependencies": {
-    "ejs": "^3.1.2",
+    "ejs": "^3.1.9",
     "lodash": "^4.17.15",
     "morgan": "^1.10.0",
     "express": "^4.18.2",
-    "mongoose": "^8.0.2"
+    "mongoose": "^8.0.3"
   }
 }
