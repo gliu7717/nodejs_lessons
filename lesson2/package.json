@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/iamshaunjp/node-crash-course.git"
   },
-  "author": "net ninja",
+  "author": "gliu ",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/iamshaunjp/node-crash-course/issues"
@@ -19,6 +19,5 @@
   "homepage": "https://github.com/iamshaunjp/node-crash-course#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "lodash": "^4.17.15"
   }
 }
