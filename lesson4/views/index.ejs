@@ -11,7 +11,7 @@
       <% users.forEach(user => { %>
         <a class="single" href="/users/<%= user._id %>">
           <h3 class="name"><%= user.name %></h3>
-          <p class="phone"><%= user.phone %></p>
+          <p class="email"><%= user.email %></p>
         </a>
       <% }) %>
     <% } else { %>

@@ -51,16 +51,24 @@ app.get('/users', (req, res) => {
 });
 
 app.post('/users', (req, res) => {
-  // console.log(req.body);
-  const user = new User(req.body);
-
-  user.save()
+  console.log(req.body);
+  if(req.body.password!=req.body.password1){
+     res.status(404).render('404', { title: 'password not match', message:"password not match" });
+  }
+  else{
+    const user = new User({
+      name:req.body.name,
+      email:req.body.email,
+      password:req.body.password
+    })
+    user.save()
     .then(result => {
       res.redirect('/users');
     })
     .catch(err => {
       console.log(err);
     });
+  }
 });
 
 app.get('/users/:id', (req, res) => {
@@ -88,5 +96,5 @@ app.delete('/users/:id', (req, res) => {
 
 // 404 page
 app.use((req, res) => {
-  res.status(404).render('404', { title: '404' });
+  res.status(404).render('404', { title: '404', message:" OOPS, page not found :)" });
 });
